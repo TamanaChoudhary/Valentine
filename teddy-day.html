@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Teddy Day 🧸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5ec, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+      transition: all 0.3s ease;
+    }
+    h1 { color: #ff4d6d; margin-bottom: 15px; }
+    p { font-size: 18px; margin: 15px 0; line-height: 1.5; }
+    button {
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #ff4d6d;
+      color: white;
+      transition: all 0.2s ease;
+    }
+    button:hover {
+      background: #ff1f4b;
+      transform: scale(1.05);
+    }
+    img {
+      width: 150px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <h1>🧸 Happy Teddy Day! 🧸</h1>
+  <p>
+    I need your hugs whenever I don’t feel okay,  
+    and I would want us to be each other’s teddy as long as possible. 💖
+  </p>
+  <button onclick="showTeddy()">Click here for a teddy surprise 🧸</button>
+</div>
+
+<script>
+function showTeddy() {
+  // Replace "teddy.png" with your teddy image in the same folder
+  const teddyImage = "teddy.jpg";
+
+  document.getElementById("card").innerHTML = `
+    <h1>💖 Here’s your cuddly teddy! 💖</h1>
+    <img src="${teddyImage}" alt="Cute Teddy">
+    <p>Hope it makes you feel warm and loved! 🧸</p>
+    <button onclick="goNext()">Click here for the next day 💌</button>
+  `;
+}
+
+function goNext() {
+  window.location.href = "promise-day.html"; // Replace with your next page
+}
+</script>
+
+</body>
+</html>

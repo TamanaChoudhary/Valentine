@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Propose Day 🌹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5ec, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+      transition: all 0.3s ease;
+    }
+    h1 { color: #ff4d6d; margin-bottom: 10px; }
+    h2 { color: #ff1f4b; margin: 20px 0 10px 0; }
+    p { font-size: 18px; margin: 15px 0; line-height: 1.5; }
+    button {
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #ff4d6d;
+      color: white;
+      transition: all 0.2s ease;
+    }
+    button:hover {
+      background: #ff1f4b;
+      transform: scale(1.05);
+    }
+    img {
+      width: 150px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <h1>Happy Propose Day 💍</h1>
+  <h2>The only proposal I can make:</h2>
+  <p>Will you be by my side forever? 💖</p>
+  <h2>My heartfelt proposal:</h2>
+  <p>
+    I don’t want you to change a single thing about yourself — just stay the way you are: happy, soulful, and full of life.  
+    I hope that whenever you’re feeling down, you’ll call me without a second thought.  
+    Being with you feels like home, and I want us to keep creating this happiness together… forever.
+  </p>
+  <button onclick="showRing()">If accepted, click here</button>
+</div>
+
+<script>
+function showRing() {
+  // Replace "paper-ring.png" with your local ring image file
+  const ringImage = "paperrings.jpg"; // Make sure this image is in the same folder
+
+  document.getElementById("card").innerHTML = `
+    <h1>💖 You said yes! 💖</h1>
+    <p>Here’s a little token of my love 💍</p>
+    <a href="chocolate.html">
+      <img src="${ringImage}" alt="Paper Ring">
+    </a>
+    <p>Click the image to go to Chocolate Day 🍫</p>
+  `;
+}
+</script>
+
+</body>
+</html>

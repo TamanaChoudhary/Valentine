@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Rose Day 🌹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5ec, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    h1 { color: #ff4d6d; }
+    p { font-size: 18px; margin: 20px 0; }
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+    button {
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #ff4d6d;
+      color: white;
+      transition: all 0.2s ease;
+    }
+    button:hover {
+      background: #ff1f4b; 
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <h1>Happy Roseeeee day 🌹</h1>
+  <p>Do I have your consent to bring a big smile on your face? 🥰</p>
+  <button onclick="showBouquet()">Yes 💕</button>
+</div>
+
+<script>
+function showBouquet() {
+  // Using your local image in the same folder
+  const bouquetImage = "download.jpeg";
+
+  document.getElementById("card").innerHTML = `
+    <h1>you diserve 100 times this💐</h1>
+    <img src="${bouquetImage}" alt="Beautiful Bouquet">
+    <button onclick="goToPropose()">Click here please</button>
+  `;
+}
+
+function goToPropose() {
+  window.location.href = "propose-day.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Promise Day 🌹</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffe5ec, #fff0f5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+      padding: 10px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 90%;
+      transition: all 0.3s ease;
+    }
+    h1 { color: #ff4d6d; margin-bottom: 15px; }
+    p { font-size: 18px; margin: 15px 0; line-height: 1.5; }
+    button {
+      border: none;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      background: #ff4d6d;
+      color: white;
+      transition: all 0.2s ease;
+    }
+    button:hover {
+      background: #ff1f4b;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="card">
+  <h1>🌹 Happy Promise Day! 🌹</h1>
+  <p>
+    Today, I want to make a promise from the deepest corners of my heart — a promise that goes beyond words.  
+    I promise to always be emotionally available to you, 24 hours a day, 7 days a week. Whenever you feel lonely, sad, or lost, I will be there to listen, to understand, and to hold your heart with care.
+    I promise to protect you from all evils — not just the obvious ones, but even the silent worries and fears that try to weigh you down. I will be your safe space, your shield, and your comfort.
+    I promise to celebrate your happiness as if it were my own, to encourage you in your dreams, and to stand beside you when life gets tough. I promise to laugh with you in joy, cry with you in sorrow, and grow with you in every moment.
+    I may not be perfect, but my love is unwavering. I promise to keep learning, improving, and showing you every day how much you mean to me. And above all, I promise to love you in the purest, most soulful way possible — with all that I am and all that I have. 💖
+    Will you let me keep these promises, and let me be the one you can always rely on?
+  </p>
+  <button onclick="acceptPromise()">I accept your promise 💕</button>
+</div>
+
+<script>
+function acceptPromise() {
+  document.getElementById("card").innerHTML = `
+    <h1>💖 Promise Accepted! 💖</h1>
+    <p>Thank you for trusting me with your heart ❤️</p>
+    <button onclick="goToHugDay()">Click here to move to Hug Day 🫂</button>
+  `;
+}
+
+function goToHugDay() {
+  window.location.href = "hug-day.html"; // Replace with your Hug Day page
+}
+</script>
+
+</body>
+</html>
